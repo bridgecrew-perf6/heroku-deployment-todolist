@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    border: 0;
+    padding: 0;
+}
+body{
+    background: rgb(235, 226, 226);
+    padding-top: 80px;
+}
+header{
+    height: 80px;
+    background-color: forestgreen;
+    position: fixed;
+    top:0px;
+    right: 0px;
+    left: 0px;
+    box-shadow: 1px 2px 20px rgba(0,0,0,0.5);
+    z-index: 100;
+}
+input{
+    position: absolute;
+    top:20px;
+    right:50px;
+    left:30px;
+    width: calc(100%-80px);
+    height: 40px;
+    padding-left:15px;
+    padding-right:70px;
+    font-size: 15px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color:white;
+    background: rgb(107, 177, 101);
+}
+input::placeholder{
+    color: gray;
+}
+.add-btn{
+    position: absolute;
+    top:20.4px;
+    right:50px;
+    height: 39px;
+    width: 39px;
+    font-weight: bold;
+    font-size: 25px;
+    color:forestgreen;
+    border-radius: 50%;  
+}
+.add-btn:hover{
+    background-color: forestgreen;
+    color:white;
+}
+ul{
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;      
+    list-style: none;
+    font-size: 20px;
+    
+    
+}
+li .text{
+    width: 85%;
+    word-break: break-all;
+    
+}
+li{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;   
+    justify-content: space-between;
+    justify-items: center;
+    justify-self: center;
+    align-content: center;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.1);   
+}
+li .buttons{
+    display: flex;
+      
+}
+.undoes div .btn1{
+    margin-right: 15px;
+    background: white;
+    border-right:1.1px solid rgba(155, 154, 154,0.5);
+    padding-right: 10px;
+}
+.undoes div .btn2{
+    margin-right: 15px;
+    background: white;
+    ;
+}
+.btn1 svg{
+    fill:red;
+}
+.undoes .btn2 svg{
+    fill:forestgreen;
+}
+.btn1  svg:hover{
+    fill:black;
+}
+.undoes .btn2 svg:hover{
+    fill:black;
+}
+.done div .btn1{
+    margin-right: 15px;
+    background: white;
+    border-right:1.1px solid rgba(155, 154, 154,0.5);
+    padding-right: 10px;
+}
+.done div .btn2{
+    margin-right: 15px;
+    background: white;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:5px;
+    padding-bottom:2px;
+    border-radius: 50%;
+}
+.done{
+    padding-top: 30px;
+}
+.done div .btn2{
+    fill:white;
+    background: forestgreen;
+}
+.notodo{
+    position:absolute;
+    top:50%;
+    right:50%;
+    color:gray;
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#msg{  
+    display: flex;
+    position: fixed;
+    left:0;
+    right: 0;
+    bottom:0px;
+    width: 100%;
+    margin-bottom:-77px;
+    background: rgb(121, 33, 33);
+    padding: 30px;
+    color: aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    transition: 0.6s  ease;
+
+}
+#msg.msgshow{
+    margin-bottom:0px;
+}
+.done{
+    border-top: 1.1px solid rgba(155, 154, 154,0.5);
+    
+   
+}
