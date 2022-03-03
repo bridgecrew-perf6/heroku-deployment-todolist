@@ -1,2 +1,4 @@
 # heroku-deployment-todolist
-  a simple todo static application
+ This is a simple todo static application in which i use HTML, CSS and JAVASCRIPT.
+  
+   
